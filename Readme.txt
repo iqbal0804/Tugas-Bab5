@@ -10,4 +10,4 @@ Nama	: MUHAMMAD IQBAL
 
 NIM 	: 155150400111122
 
-KELAS   : SI-H
+KELAS   : Sistem Informasi-H
