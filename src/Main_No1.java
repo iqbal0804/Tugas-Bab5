@@ -21,4 +21,63 @@ public class Main_No1 {
 
             double x, y;
             switch (pilihan) {
-               
+                case 1:
+                    System.out.println("\tPenjumlahan");
+                    System.out.print("Nilai x = ");
+                    x = in.nextDouble();
+                    System.out.print("Nilai y = ");
+                    y = in.nextDouble();
+                    ClassNo1.Penjumlahan(x, y);
+                    hitung.Progsederhana();
+                    System.out.println("=======================================");
+                    System.out.println("Hasil dari " + x + " + " + y + " = " + ClassNo1.hasiljumlah);
+                    System.out.println("=======================================");
+
+                    break;
+                case 2:
+                    System.out.println("\tPengurangan");
+                    System.out.print("Nilai x = ");
+                    x = in.nextDouble();
+                    System.out.print("Nilai y = ");
+                    y = in.nextDouble();
+                    ClassNo1.Pengurangan(x, y);
+                    hitung.Progsederhana();
+                    System.out.println("=======================================");
+                    System.out.println("Hasil dari " + x + " - " + y + " = " + ClassNo1.hasilkurang);
+                    System.out.println("=======================================");
+                    break;
+                case 3:
+                    System.out.println("\tPerkalian");
+                    System.out.print("Nilai x = ");
+                    x = in.nextDouble();
+                    System.out.print("Nilai y = ");
+                    y = in.nextDouble();
+                    hitung.Perkalian(x, y);
+                    hitung.Progsederhana();
+                    System.out.println("=======================================");
+                    System.out.println("Hasil dari " + x + " X " + y + " = " + hitung.hasilkali);
+                    System.out.println("=======================================");
+                    break;
+                case 4:
+                    System.out.println("\tPembagian");
+                    System.out.print("Nilai x = ");
+                    x = in.nextDouble();
+                    System.out.print("Nilai y = ");
+                    y = in.nextDouble();
+                    hitung.Pembagian(x, y);
+                    hitung.Progsederhana();
+                    System.out.println("=======================================");
+                    System.out.println("Hasil dari " + x + " / " + y + " = " + hitung.hasilbagi);
+                    System.out.println("=======================================");
+                    break;
+                default:
+                    if (pilihan == 0) {
+                        break;
+                    }
+                    System.out.println("Maaf, Pilihan Anda Tidak Tersedia");
+            }
+
+        } while (pilihan != 0);
+        System.out.println("\t     Terima Kasih dan Jangan Kapok Berhitung");
+    }
+}
