@@ -1,0 +1,22 @@
+package BAB5_PrakPL2;
+
+import java.util.Scanner;
+
+public class MainJacket {
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        ClassJacket Jacket = new ClassJacket();
+        int pilihan;
+        int jumlah;
+        System.out.println("CV. Labkomdas Jacket Production");
+        do {
+            System.out.println("=========PEMESANAN JACKET============");
+            System.out.println("1. Paket Jacket bahan A ");
+            System.out.println("2. Paket Jacket bahan B ");
+            System.out.println("3. Paket Jacket bahan C ");
+            System.out.println("4. Pemesanan Selesai");
+            System.out.print("Masukan pilihan anda : ");
+            pilihan = in.nextInt();
+            switch (pilihan) {
